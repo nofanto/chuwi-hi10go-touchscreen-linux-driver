@@ -1210,6 +1210,9 @@ retry_read_config:
 			"Applying 'inverted x screen' quirk\n");
 	}
 
+	ts->prop.invert_x = true;
+	ts->prop.invert_y = true;
+
 	error = input_mt_init_slots(ts->input_dev, ts->max_touch_num,
 				    INPUT_MT_DIRECT | INPUT_MT_DROP_UNUSED);
 	if (error) {
