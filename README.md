@@ -2,7 +2,7 @@
 
 Touchscreen driver for Chuwi hi10 go N5100, the current mainline driver (kernel 6.6) have inverted the touch screen in the device.
 
-This driver tested on Manjaro 23.1 (Vulcan) with gnome wayland as desktop environment. 
+This driver tested on Manjaro 23.1 (Vulcan) with kernel 6.6 and gnome wayland as desktop environment. 
 
 
 ## Preparation
@@ -54,3 +54,8 @@ If the build succeded, go to the cloned folder and follow these steps:
   ```
 
 3. Reboot the device
+
+# References
+
+- linux kernel 6.6 https://github.com/torvalds/linux/tree/v6.6
+- Adya Goodix Touchscreen Linux Driver https://gitlab.com/AdyaAdya/goodix-touchscreen-linux-driver
