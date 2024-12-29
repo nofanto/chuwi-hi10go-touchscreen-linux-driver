@@ -55,6 +55,32 @@ If the build succeded, go to the cloned folder and follow these steps:
 
 3. Reboot the device
 
+## DKMS Installation
+
+To install the DKMS driver, follow these steps:
+
+1. **Update the Script**:
+   - Open the [create_dkms-driver.sh](cci:7://file:///Users/nofantoibrahim/Projects/personal/chuwi-hi10go-touchscreen-linux-driver/create_dkms-driver.sh:0:0-0:0) script.
+   - Update the `SOURCE_DIR` variable to point to the actual path of your Goodix touchscreen driver source files.
+
+2. **Run the Installation Script**:
+   - Open a terminal and navigate to the directory containing the [create_dkms-driver.sh](cci:7://file:///Users/nofantoibrahim/Projects/personal/chuwi-hi10go-touchscreen-linux-driver/create_dkms-driver.sh:0:0-0:0) script.
+   - Run the following command to execute the script with superuser permissions:
+     ```bash
+     sudo bash create_dkms-driver.sh
+     ```
+
+3. **Reboot (if prompted)**: After the installation completes, you may be prompted to reboot your system. Follow the instructions provided by the script.
+
+## Prerequisites
+
+- Ensure that DKMS is installed on your system.
+- You may need superuser (sudo) permissions to run the script.
+
+## Troubleshooting
+
+If you encounter any issues during installation, check the output messages for errors. Ensure that all paths are correct and that you have the necessary permissions.
+
 # References
 
 - linux kernel 6.6 https://github.com/torvalds/linux/tree/v6.6
